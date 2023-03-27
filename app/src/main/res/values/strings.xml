@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bestaurant</string>
+    <string name="look_text">Look Up</string>
+    <string name="favorites_text">Favorites</string>
+    <string name="random_text">Pick For Me (random)</string>
+    <string name="viewed_text">Recently Viewed</string>
+    <string name="action_text">ACTION!</string>
+</resources>
