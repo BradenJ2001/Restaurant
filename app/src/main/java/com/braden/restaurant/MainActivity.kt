@@ -1,5 +1,6 @@
 package com.braden.restaurant
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -23,11 +24,8 @@ class MainActivity : AppCompatActivity() {
         viewedButton = findViewById(R.id.viewed_button)
 
         lookButton.setOnClickListener { view: View ->
-            Snackbar.make(
-                view,
-                R.string.action_text,
-                Snackbar.LENGTH_SHORT
-            ).show()
+            val Intent = Intent(this, LookUpActivity::class.java)
+            startActivity(Intent)
         }
         favoritesButton.setOnClickListener { view: View ->
             Snackbar.make(
