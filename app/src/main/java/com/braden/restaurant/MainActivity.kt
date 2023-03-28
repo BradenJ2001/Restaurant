@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var favoritesButton: Button
     private lateinit var randomButton: Button
     private lateinit var viewedButton: Button
+    // did it work
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
