@@ -39,6 +39,12 @@
             android:layout_width="305dp"
             android:layout_height="wrap_content"
             android:text="@string/viewed_text" />
+        <Button
+
+            android:id="@+id/maps_button"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:text="@string/map_map" />
     </LinearLayout>
 
 

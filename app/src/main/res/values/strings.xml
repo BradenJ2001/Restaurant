@@ -6,4 +6,6 @@
     <string name="viewed_text">Recently Viewed</string>
     <string name="action_text">ACTION!</string>
     <string name="test_text">work</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="map_map">Maps</string>
 </resources>

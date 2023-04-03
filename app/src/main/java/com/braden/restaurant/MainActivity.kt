@@ -12,6 +12,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var favoritesButton: Button
     private lateinit var randomButton: Button
     private lateinit var viewedButton: Button
+    private lateinit var mapsButton: Button
+
     // did it work
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         favoritesButton = findViewById(R.id.favorites_button)
         randomButton = findViewById(R.id.random_button)
         viewedButton = findViewById(R.id.viewed_button)
+        mapsButton = findViewById(R.id.maps_button)
 
         lookButton.setOnClickListener { view: View ->
             val Intent = Intent(this, LookUpActivity::class.java)
@@ -47,6 +50,10 @@ class MainActivity : AppCompatActivity() {
                 R.string.action_text,
                 Snackbar.LENGTH_SHORT
             ).show()
+        }
+        mapsButton.setOnClickListener { view: View ->
+            val Intent = Intent(this, MapsActivity::class.java)
+            startActivity(Intent)
         }
     }
 }
