@@ -31,7 +31,7 @@ class LookUpActivity : AppCompatActivity() {
             var data = db.readData()
             screenResult.text=""
             for (i in 0..(data.size-1)) {
-                screenResult.append(data.get(i).name + " " + data.get(i).star + " " + data.get(i).type + " " + data.get(i).address)
+                screenResult.append(data.get(i).name + " " + data.get(i).star + " " + data.get(i).type + " " + data.get(i).address + "\n")
             }
 
         }
