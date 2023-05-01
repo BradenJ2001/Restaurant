@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var randomButton: Button
     private lateinit var viewedButton: Button
     private lateinit var mapsButton: Button
+    private lateinit var storingButton: Button
 
     // did it work
 
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         randomButton = findViewById(R.id.random_button)
         viewedButton = findViewById(R.id.viewed_button)
         mapsButton = findViewById(R.id.maps_button)
+        storingButton = findViewById(R.id.storing_button)
+
 
         lookButton.setOnClickListener { view: View ->
             val Intent = Intent(this, LookUpActivity::class.java)
@@ -50,6 +53,10 @@ class MainActivity : AppCompatActivity() {
                 R.string.action_text,
                 Snackbar.LENGTH_SHORT
             ).show()
+        }
+        storingButton.setOnClickListener { view: View ->
+            val intent = Intent(this, StoringActivity::class.java)
+            startActivity(intent)
         }
         mapsButton.setOnClickListener { view: View ->
             val Intent = Intent(this, MapsActivity::class.java)

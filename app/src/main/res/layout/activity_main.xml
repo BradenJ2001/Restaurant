@@ -45,6 +45,11 @@
             android:layout_width="305dp"
             android:layout_height="wrap_content"
             android:text="@string/map_map" />
+        <Button
+            android:id="@+id/storing_button"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_restaurant" />
     </LinearLayout>
 
 

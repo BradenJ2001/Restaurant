@@ -8,4 +8,11 @@
     <string name="test_text">work</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="map_map">Maps</string>
+    <string name="add_name">Name</string>
+    <string name="add_star">Star</string>
+    <string name="add_address">Address</string>
+    <string name="add_type">Type</string>
+    <string name="add_restaurant">Create Restaurant</string>
+    <string name="add_to_database">Add Restaurant</string>
+
 </resources>
