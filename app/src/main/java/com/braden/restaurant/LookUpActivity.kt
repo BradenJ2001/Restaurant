@@ -20,7 +20,7 @@ class LookUpActivity : AppCompatActivity() {
         screenResult = findViewById(R.id.screenResult)
 
         val context = this
-        var db = DataBaseHandler(context)
+        val db = DataBaseHandler(context)
         getRestButton.setOnClickListener { view: View ->
             Snackbar.make(
                 view,
@@ -28,7 +28,7 @@ class LookUpActivity : AppCompatActivity() {
                 Snackbar.LENGTH_SHORT
             ).show()
 
-            var data = db.readData()
+            val data = db.readData()
             screenResult.text=""
             for (i in 0..(data.size-1)) {
                 screenResult.append(data.get(i).name + " " + data.get(i).star + " " + data.get(i).type + " " + data.get(i).address + "\n")
