@@ -56,4 +56,24 @@ class DataBaseHandler(var context: Context) : SQLiteOpenHelper(context, DATABASE
             Toast.makeText(context, "Success", Toast.LENGTH_SHORT).show()
     }
 
+    fun readData() : MutableList<Restaurant>{
+        var list: MutableList<Restaurant> = ArrayList()
+
+        val db = this.readableDatabase
+        val query= "select * from $TABLE_NAME1"
+        val result = db.rawQuery(query, null)
+        if(result.moveToFirst()){
+            do{
+                var restaurant = Restaurant()
+                restaurant.name = result.getString(0)
+                restaurant.star = result.getString(1)
+                restaurant.type = result.getString(2)
+                restaurant.address = result.getString(3)
+                list.add(restaurant)
+            } while (result.moveToNext())
+        }
+
+        return list
+    }
+
 }

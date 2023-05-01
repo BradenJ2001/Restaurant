@@ -12,4 +12,7 @@ class Restaurant{
         this.type=type
         this.address=address
     }
+    constructor(){
+
+    }
 }

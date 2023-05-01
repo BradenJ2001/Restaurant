@@ -23,6 +23,7 @@ class StoringActivity : AppCompatActivity() {
         etvType = findViewById(R.id.etvType)
         etvAddress = findViewById(R.id.etvAddress)
         val context = this
+        var db = DataBaseHandler(context)
         insertButton.setOnClickListener {
             if (etvName.text.toString().length > 0 &&
                 etvStar.text.toString().length > 0 &&
@@ -35,7 +36,6 @@ class StoringActivity : AppCompatActivity() {
                     etvType.text.toString(),
                     etvAddress.text.toString()
                 )
-                var db = DataBaseHandler(context)
                 db.insertData(restaurant)
             } else {
                 Toast.makeText(context, "Please Fill All Data's", Toast.LENGTH_SHORT).show()
